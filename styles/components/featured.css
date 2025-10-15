@@ -30,6 +30,61 @@
   margin: 1rem 0;
 }
 
+.featured__info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.featured__info-container div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.featured__label {
+  font-size: var(--size-base);
+  text-transform: capitalize;
+  margin-bottom: 0.25em;
+}
+
+.featured__tech-stack {
+  padding: 0;
+  list-style: none;
+}
+
+.featured__info {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  text-transform: capitalize;
+}
+
+.featured__img-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.featured__img-wrapper {
+  position: relative;
+}
+
+.featured__img-wrapper::after {
+  content: "";
+  background-color: rgba(79, 70, 229, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.featured__img-wrapper:hover::after {
+  background-color: rgba(79, 70, 229, 0.3);
+}
+
 /* xs screens
 @media (min-width: 475px) {}
 
@@ -51,10 +106,31 @@
     font-size: var(--size-base);
     margin: 1.5rem 0;
   }
+
+  .featured__label {
+    font-size: var(--size-lg);
+  }
+
+  .featured__info {
+    font-size: var(--size-base);
+  }
+
+  .featured__img-container {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* sm screens */
+@media (min-width: 640px) {
+  .featured__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
 }
 
 /* medium screens */
-/* @media (min-width: 768px) {} */
+/* @media (min-width: 768px) {
+} */
 
 /* large screens */
 
@@ -71,6 +147,14 @@
     height: var(--size-4xl);
   }
   .featured__description {
+    font-size: var(--size-lg);
+  }
+
+  .featured__label {
+    font-size: var(--size-xl);
+  }
+
+  .featured__info {
     font-size: var(--size-lg);
   }
 }
@@ -90,6 +174,19 @@
   .featured__description {
     font-size: var(--size-xl);
     margin: 2rem 0;
+  }
+
+  .featured__label {
+    font-size: var(--size-2xl);
+  }
+
+  .featured__info {
+    font-size: var(--size-xl);
+  }
+
+  .featured__img-container {
+    margin-top: 2rem;
+    gap: 2rem;
   }
 }
 
