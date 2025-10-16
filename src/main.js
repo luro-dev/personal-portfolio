@@ -7,6 +7,11 @@ import "../styles/components/featured.css";
 import "../styles/components/work.css";
 import "../styles/components/contact.css";
 import "../styles/components/footer.css";
+import "../styles/components/mobile-nav.css";
 import "../styles/utils.css";
 
-// left off -> contact section (2:06:17)
+import mobileNav from "./utils/mobile-nav";
+
+mobileNav();
+
+// left off -> mobile menu (2:29:46)
