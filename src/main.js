@@ -5,6 +5,8 @@ import "../styles/components/hero.css";
 import "../styles/components/about.css";
 import "../styles/components/featured.css";
 import "../styles/components/work.css";
+import "../styles/components/contact.css";
+import "../styles/components/footer.css";
 import "../styles/utils.css";
 
-// left off -> project section (1:37:58)
+// left off -> contact section (2:06:17)
