@@ -22,7 +22,7 @@
   text-align: none;
   letter-spacing: -0.05em;
   background-color: var(--clr-rose);
-  color: var(--clr-light);
+  color: oklch(96.8% 0.007 247.896);
   padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),

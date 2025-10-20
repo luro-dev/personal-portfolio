@@ -11,7 +11,9 @@ import "../styles/components/mobile-nav.css";
 import "../styles/utils.css";
 
 import mobileNav from "./utils/mobile-nav";
+import darkMode from "./utils/dark-mode";
 
 mobileNav();
+darkMode();
 
 // left off -> mobile menu (2:29:46)
